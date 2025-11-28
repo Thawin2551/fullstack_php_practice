@@ -34,6 +34,11 @@
         header("location: auth-page.php");
         exit();
     }
+
+    if($_SESSION['role'] !== 'admin') {
+        header("Location: " . $BASE_URL . "/product-list.php");
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>

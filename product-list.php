@@ -30,7 +30,6 @@
 </head>
 <body class="bg-body-teritary">
     <?php include("include/menu.php") ?>
-    
     <div class="container" style="margin-top: 30px;">
 
     <!-- Product Add cart Message Alert -->
@@ -44,7 +43,7 @@
         
         <!-- Product List Describe -->
         <h4>Product-List</h4>
-
+        
         <div class="row d-flex justify-content-center">
             <?php if ($num_rows > 0) : ?>
                 <?php while($product = mysqli_fetch_assoc($query)): ?>
